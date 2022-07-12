@@ -1,0 +1,26 @@
+{
+    "name": "htcw_w2812",
+    "version": "0.1.0",
+    "description": "Provides support a neopixel display device w/ GFX",
+    "keywords": ["neopixel","graphics","drawing"],
+    "authors": {
+        "name":"honey the codewitch",
+        "homepage": "https://www.codeproject.com/Members/code-witch"
+    },
+    "license": "MIT",
+    "frameworks": "*",
+    "platforms": "*",
+    "build": {
+        "unflags": "-std=gnu++11",
+        "flags": "-std=gnu++14"
+    },
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/codewitch-honey-crisis/htcw_w2812.git"
+    },
+    "dependencies": {
+        "codewitch-honey-crisis/htcw_gfx": "^1.2.7",
+        "kitesurfer1404/WS2812FX": "^1.4.0"
+    }
+}
