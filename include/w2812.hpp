@@ -62,7 +62,10 @@ public:
             return gfx::gfx_result::success;
         }
         // TODO: can probably set this faster
-        m_np.fill(r.width(),r.x1,color.template channel<gfx::channel_name::R>()|(color.template channel<gfx::channel_name::G>()<<8)|(color.template channel<gfx::channel_name::B>()<<16));
+        // m_np.fill(r.width(),r.x1,color.template channel<gfx::channel_name::R>()|(color.template channel<gfx::channel_name::G>()<<8)|(color.template channel<gfx::channel_name::B>()<<16));
+        for(int i = r.x1;i<=r.x2;++i) {
+            m_np.setPixelColor(i,color.template channel<gfx::channel_name::R>()|(color.template channel<gfx::channel_name::G>()<<8)|(color.template channel<gfx::channel_name::B>()<<16));
+        }
         update();
         return gfx::gfx_result::success;
     }
