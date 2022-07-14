@@ -1,6 +1,6 @@
 {
     "name": "htcw_w2812",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Provides support a neopixel display device w/ GFX",
     "keywords": ["neopixel","graphics","drawing"],
     "authors": {
@@ -21,6 +21,6 @@
     },
     "dependencies": {
         "codewitch-honey-crisis/htcw_gfx": "^1.2.7",
-        "kitesurfer1404/WS2812FX": "^1.4.0"
+        "adafruit/Adafruit NeoPixel": "^1.1.7"
     }
 }
