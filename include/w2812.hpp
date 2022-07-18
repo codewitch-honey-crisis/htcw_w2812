@@ -70,9 +70,9 @@ public:
         // m_np.fill(r.width(),r.x1,color.template channel<gfx::channel_name::R>()|(color.template channel<gfx::channel_name::G>()<<8)|(color.template channel<gfx::channel_name::B>()<<16));
         
         int offs = r.y1*dimensions().width+r.x1;
-        int i = r.width()*r.height();
+        int total = r.width()*r.height();
         uint32_t c = color.template channel<gfx::channel_name::R>()|(color.template channel<gfx::channel_name::G>()<<8)|(color.template channel<gfx::channel_name::B>()<<16);
-        while(--i) {
+        for(int i = 0;i<total;++i) {
             m_np.setPixelColor(i+offs,c);
         }
         update();
