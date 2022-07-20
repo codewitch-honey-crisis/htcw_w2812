@@ -1,6 +1,6 @@
 {
     "name": "htcw_w2812",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Provides support a neopixel display device w/ GFX",
     "keywords": ["neopixel","graphics","drawing"],
     "authors": {

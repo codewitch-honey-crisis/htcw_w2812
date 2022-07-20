@@ -8,5 +8,5 @@ platform = espressif32
 board = node32s
 framework = arduino
 lib_deps = 
-	codewitch-honey-crisis/htcw_w2812@^0.1.3
+	codewitch-honey-crisis/htcw_w2812@^0.1.4
 ```

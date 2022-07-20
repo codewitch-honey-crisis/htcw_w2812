@@ -59,6 +59,10 @@ public:
         update();
         return gfx::gfx_result::success;
     }
+    inline gfx::gfx_result clear(const gfx::rect16& bounds) {
+        pixel_type px;
+        return fill(bounds,px);
+    }
     inline gfx::gfx_result fill(const gfx::rect16& bounds, pixel_type color) {
         m_np.begin();
         gfx::rect16 r = bounds.normalize();
